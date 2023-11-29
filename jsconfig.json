@@ -1,0 +1,36 @@
+// vscode配置文件: 通过jsconfig.json来设置编译选项，可以帮助我们提高开发效率，避免一些不必要的错误。
+{
+  "compilerOptions": {
+    // 指定要使用的默认库，值为"es3","es5","es2015"...
+    "target": "es5",
+    // 指定模块系统（生成模块代码时），可选 amd / commonJS / es2015 / es6 / esnext / none / system / umd
+    "module": "esnext",
+    "baseUrl": "./",
+    // 指定如何解析模块以进行导入，可选 node / classic
+    "moduleResolution": "node",
+     // 解决别名导致vscode无法跳转文件的问题
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    // TS需要引用的库，即声明文件，es5 默认引用dom、es5、scripthost,
+    // 如需要使用es的高级版本特性，通常都需要配置，如es8的数组新特性需要引入"ES2019.Array",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  // 与开发无关的文件(非源码)可以让 IDE 全部在编译时排除掉，以提高 IDE 性能
+  "exclude": [
+    "node_modules", 
+    "**/node_modules/*",
+    "dist"
+  ],
+  // 显式声明包含的文件
+  "include": [
+    "src/*.js"
+  ]
+}
