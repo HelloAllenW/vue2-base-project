@@ -14,7 +14,8 @@ import TheSidebar from '@/sidebar'
 export default {
   components: {
     TheSidebar
-  }
+  },
+  mounted() {}
 }
 </script>
 

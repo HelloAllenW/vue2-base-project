@@ -2,11 +2,9 @@
   <el-menu
     :default-active="$route.name"
     :collapse="collapse"
-    :collapse-transition="false">
-    <router-link
-      v-for="item in menuList"
-      :key="item.name"
-      :to="item.path">
+    :collapse-transition="false"
+  >
+    <router-link v-for="item in menuList" :key="item.name" :to="item.path">
       <el-menu-item :index="item.name">
         <i :class="item.icon"></i>
         <span slot="title">{{ item.title }}</span>
@@ -24,12 +22,12 @@ export default {
       required: true
     }
   },
-  data () {
+  data() {
     return {
       menuList: []
     }
   },
-  created () {
+  created() {
     this.menuList = this.$router.options.routes
   }
 }
@@ -37,8 +35,7 @@ export default {
 
 <style lang="less" scoped>
 .el-menu {
-  // height: calc(100% - 90px);
-  height: calc(100% - 40px);
+  height: calc(100% - 90px);
   .el-menu-item {
     text-align: left;
     span {

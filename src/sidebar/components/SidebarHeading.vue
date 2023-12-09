@@ -4,11 +4,9 @@
       <img
         v-if="collapse"
         class="sidebar-heading-collapse-logo"
-        src="@/assets/logo.png">
-      <img
-        v-else
-        class="sidebar-heading-logo"
-        src="@/assets/text_logo.png">
+        src="@/assets/logo.png"
+      />
+      <img v-else class="sidebar-heading-logo" src="@/assets/logo.png" />
     </transition>
   </div>
 </template>
@@ -38,8 +36,9 @@ export default {
   position: relative;
   height: 50px;
   line-height: 50px;
-  background-color: rgb(3, 50, 106);
+  background-color: #fff;
   text-align: center;
+  border-bottom: 1px solid #f2f2f2;
 
   .sidebar-heading-collapse-logo {
     height: 30px;

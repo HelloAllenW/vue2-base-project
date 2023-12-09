@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Paas App"/>
+    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+    <HelloWorld msg="前端项目构建" />
   </div>
 </template>
 

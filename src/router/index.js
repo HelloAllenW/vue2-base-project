@@ -7,37 +7,16 @@ const routes = [
   {
     name: 'home',
     path: '/',
-    title: '首页',
+    title: 'Home',
     icon: 'el-icon-user',
     component: () => import('@/views/HomeView.vue')
   },
   {
-    name: 'parameterCacheApp',
-    path: '/parameter-cache-app',
-    title: 'JVM参数缓存',
+    name: 'Menu',
+    path: '/menu',
+    title: 'Menu',
     icon: 'el-icon-phone-outline',
-    component: () => import('@/views/parameterCacheApp/index.vue')
-  },
-  {
-    name: 'gatewayApp',
-    path: '/gateway-app',
-    title: '联机网关',
-    icon: 'el-icon-goods',
-    component: () => import('@/views/gatewayApp/index.vue')
-  },
-  {
-    name: 'distributedTransactionsApp',
-    path: '/distributed-transactions-app',
-    title: '分布式事务',
-    icon: 'el-icon-warning-outline',
-    component: () => import('@/views/distributedTransactionsApp/index.vue')
-  },
-  {
-    name: 'distributedSequenceApp',
-    path: '/distributed-sequence-app',
-    title: '分布式序列',
-    icon: 'el-icon-help',
-    component: () => import('@/views/distributedSequenceApp/index.vue')
+    component: () => import('@/views/Menu/index.vue')
   }
 ]
 
