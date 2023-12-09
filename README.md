@@ -8,6 +8,7 @@ In the project directory, you can run:
 3. `yarn install`
 4. `npm run prepare`：创建.husky
 5. `npm run commit`: 使用图形化选择规范的commit
+6. `npm run changelog`: 生成changelog.md文件
 
 ## 项目构建基础
 1. 通过脚手架`@vue/cli`手动搭建一个完整的vue项目。
@@ -29,12 +30,13 @@ In the project directory, you can run:
 - 如果只需要修改新代码，不考虑存量的。那么使用`lint-staged`依赖只针对当前修改的部分进行检测；
 8. 通过`commitlint.config.js`规范commit。
 9. 根据`commit message`自动生成changlog。
-10. 样式规范工具`StyleLint`。
-11. `.env.*` 多环境配置。
-12. 配置兼容浏览器`.browserslistrc`。
-13. .vscode 配置插件推荐：
+10. 自定义`changelog-option.js`。
+11. 样式规范工具`StyleLint`。
+12. `.env.*` 多环境配置。
+13. 配置兼容浏览器`.browserslistrc`。
+14. .vscode 配置插件推荐：
 在`.vscode`文件夹下配置`extensions.json`，每次打开vscode会提示安装插件。
-14. `vue.config.js`配置优化。
+15. `vue.config.js`配置优化。
 
 ## 项目构建进阶
 1. 通过[`eslint-plugin-compat`]实现自动化兼容性检查(https://zhuanlan.zhihu.com/p/647874867)。防止本地谷歌浏览器调试没问题，线上遇到IE等低版本设备报错导致App异常。
