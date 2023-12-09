@@ -6,6 +6,8 @@ In the project directory, you can run:
 1. `yarn serve`
 2. `yarn build`
 3. `yarn install`
+4. `npm run prepare`：创建.husky
+5. `npm run commit`: 使用图形化选择规范的commit
 
 ## 项目构建基础
 1. 通过脚手架`@vue/cli`手动搭建一个完整的vue项目。
@@ -25,14 +27,15 @@ In the project directory, you can run:
 - 安装`husky依赖`；
 - 在package.json中添加配置；
 - 如果只需要修改新代码，不考虑存量的。那么使用`lint-staged`依赖只针对当前修改的部分进行检测；
-8. 通过`commitlint`规范commit。
+8. 通过`commitlint.config.js`规范commit。
 9. 根据`commit message`自动生成changlog。
 10. 样式规范工具`StyleLint`。
 11. `.env.*` 多环境配置。
 12. 配置兼容浏览器`.browserslistrc`。
-13. .vscode 配置插件推荐
-14. `vue.config.js`配置优化
+13. .vscode 配置插件推荐：
+在`.vscode`文件夹下配置`extensions.json`，每次打开vscode会提示安装插件。
+14. `vue.config.js`配置优化。
 
 ## 项目构建进阶
-1. 通过[`eslint-plugin-compat`实现自动化兼容性检查](https://zhuanlan.zhihu.com/p/647874867)。防止本地谷歌浏览器调试没问题，线上遇到IE等低版本设备报错导致App异常。
+1. 通过[`eslint-plugin-compat`]实现自动化兼容性检查(https://zhuanlan.zhihu.com/p/647874867)。防止本地谷歌浏览器调试没问题，线上遇到IE等低版本设备报错导致App异常。
 2. 通过`lighthouse-ci`实现一个[性能守卫插件](https://juejin.cn/post/7253331974051823675)

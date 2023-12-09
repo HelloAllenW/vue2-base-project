@@ -1,3 +1,4 @@
+// 本地暂存代码检查工具
 module.exports = {
   '*.{js,jsx,ts,tsx}': ['eslint --fix', 'prettier --write'],
   '{!(package)*.json,*.code-snippets,.!(browserslist)*rc}': [
