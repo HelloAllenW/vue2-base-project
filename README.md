@@ -41,3 +41,7 @@ In the project directory, you can run:
 ## 项目构建进阶
 1. 通过[`eslint-plugin-compat`]实现自动化兼容性检查(https://zhuanlan.zhihu.com/p/647874867)。防止本地谷歌浏览器调试没问题，线上遇到IE等低版本设备报错导致App异常。
 2. 通过`lighthouse-ci`实现一个[性能守卫插件](https://juejin.cn/post/7253331974051823675)
+3. `swagger` 的使用
+4. 设置全局的 settings.js
+5. route-create 功能
+6. [table上方的搜索条件展开收起功能](https://github.com/hubary/element-plugins)
