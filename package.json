@@ -1,61 +1,60 @@
 {
-	"name": "vue-components",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"serve": "vue-cli-service serve",
-		"build": "vue-cli-service build",
-		"lint": "vue-cli-service lint",
-		"prepare": "husky install",
-		"prettier": "prettier --config .prettierrc --write",
-		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-		"lint:eslint": "eslint --fix --ext .js,.ts,.vue ./src",
-		"lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,ts,json,tsx,css,less,scss,vue,html,md}\"",
-		"lint:stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
-		"lint:lint-staged": "lint-staged",
-		"release": "standard-version",
-		"commit": "git add -A && git-cz"
-	},
-	"config": {
-		"commitizen": {
-			"path": "node_modules/cz-git"
-		}
-	},
-	"dependencies": {
-		"core-js": "^3.8.3",
-		"element-ui": "^2.15.14",
-		"qiankun": "^2.10.16",
-		"vue": "^2.6.14",
-		"vue-router": "^3.5.1",
-		"vuex": "^3.6.2"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.12.16",
-		"@babel/eslint-parser": "^7.12.16",
-		"@commitlint/cli": "^18.4.3",
-		"@commitlint/config-conventional": "^18.4.3",
-		"@vue/cli-plugin-babel": "~5.0.0",
-		"@vue/cli-plugin-eslint": "~5.0.0",
-		"@vue/cli-plugin-router": "~5.0.0",
-		"@vue/cli-plugin-vuex": "~5.0.0",
-		"@vue/cli-service": "~5.0.0",
-		"@vue/eslint-config-standard": "^6.1.0",
-		"commitizen": "^4.3.0",
-		"conventional-changelog": "^5.1.0",
-		"conventional-changelog-cli": "^4.1.0",
-		"cz-git": "^1.7.1",
-		"eslint": "^7.32.0",
-		"eslint-config-prettier": "^9.0.0",
-		"eslint-plugin-import": "^2.25.3",
-		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-prettier": "^5.0.1",
-		"eslint-plugin-promise": "^5.1.0",
-		"eslint-plugin-vue": "^8.0.3",
-		"husky": "^8.0.3",
-		"less": "^4.0.0",
-		"less-loader": "^8.0.0",
-		"lint-staged": "^15.1.0",
-		"prettier": "^3.1.0",
-		"vue-template-compiler": "^2.6.14"
-	}
+  "name": "vue-components",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "prepare": "husky install",
+    "prettier": "prettier --config .prettierrc --write",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "lint:eslint": "eslint --fix --ext .js,.ts,.vue ./src",
+    "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,ts,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint:stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
+    "lint:lint-staged": "lint-staged",
+    "release": "standard-version",
+    "commit": "git add -A && git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "element-ui": "^2.15.14",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-standard": "^6.1.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog": "^5.1.0",
+    "conventional-changelog-cli": "^4.1.0",
+    "cz-git": "^1.7.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "husky": "^8.0.3",
+    "less": "^4.0.0",
+    "less-loader": "^8.0.0",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0",
+    "vue-template-compiler": "^2.6.14"
+  }
 }

@@ -9,6 +9,8 @@ In the project directory, you can run:
 4. `npm run prepare`：创建.husky
 5. `npm run commit`: 使用图形化选择规范的commit
 6. `npm run changelog`: 生成changelog.md文件
+7. `yarn add [packageName] -D`
+8. `yarn remove <packageName>`
 
 ## 项目构建基础
 1. 通过脚手架`@vue/cli`手动搭建一个完整的vue项目。
