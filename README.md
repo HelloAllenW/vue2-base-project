@@ -38,7 +38,10 @@ In the project directory, you can run:
 13. 配置兼容浏览器`.browserslistrc`。
 14. .vscode 配置插件推荐：
 在`.vscode`文件夹下配置`extensions.json`，每次打开vscode会提示安装插件。
-15. `vue.config.js`配置优化。
+
+## webpack 配置
+1. [vue.config.js相关配置](https://cli.vuejs.org/zh/config/)。
+2. webpack 配置优化
 
 ## 项目构建进阶
 1. 通过[`eslint-plugin-compat`]实现自动化兼容性检查(https://zhuanlan.zhihu.com/p/647874867)。防止本地谷歌浏览器调试没问题，线上遇到IE等低版本设备报错导致App异常。
