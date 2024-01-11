@@ -250,6 +250,7 @@ module.exports = defineConfig({
         return args
       })
       // script-ext-html-webpack-plugin 是一个Webpack插件HtmlWebpackPlugin的扩展插件，该插件简化了HTML文件的创建。
+      /*
       config
         .plugin('ScriptExtHtmlWebpackPlugin')
         .after('html')
@@ -260,13 +261,17 @@ module.exports = defineConfig({
           }
         ])
         .end()
+      */
       // 打成多个chunks：标示打包（优化前）的哪些 modules 被用于优化到不同chunks中
       // https://webpack.docschina.org/plugins/split-chunks-plugin/
       config.optimization.splitChunks({
+        // 采用什么样的方式来优化分离 chunks。all表示不管是同步导入还是异步导入都会分离为独立的模块
         chunks: 'all',
+        // 生成 chunk 的最大体积（以 bytes 为单位）。
         maxSize: 2.3 * 1024 * 1024,
+        // 通过 cacheGroups，可以自定义 chunk 输出分组。设置 test 对模块进行过滤，符合条件的模块分配到相同的组。
         cacheGroups: {
-          libs: {
+          vendor: {
             name: 'chunk-libs',
             test: /[\\/]node_modules[\\/]/,
             priority: 10,
@@ -292,17 +297,11 @@ module.exports = defineConfig({
           commons: {
             name: 'chunk-commons',
             test: resolve('src/components'), // can customize your rules
-            // chunks: 'all',
-            // minSize: 1,
+            chunks: 'all',
+            minSize: 1,
             minChunks: 3, //  minimum common number
             priority: 5,
             reuseExistingChunk: true
-          },
-          vendor: {
-            name: 'chunk-libs',
-            chunks: 'all',
-            test: /[\\/]node_modules[\\/]/,
-            priority: 10
           }
         }
       })
